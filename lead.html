@@ -1,0 +1,30 @@
+<!DOCTYPE html>  <!--Document written in HTML5 -->
+<html lang="en"> <!-- This specifies that the primary language of the doc is English -->
+
+<head> <!-- head is containing sub information that isn't directly displayed on the doc -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets width to match the devices and zoom level to 1. 
+                                                                            Helps to display on both mobile and desktop devices -->
+    <title>Chess Using Javascript</title> <!-- sets the title of the webpage -->
+    <link rel="stylesheet" href="format.css"> <!-- links css file that contains styling rules to control the visual appearance -->
+
+</head>
+
+<body> <!-- all visible content is located here -->
+    <h1>Chess Made by Javascript</h1> <!-- level one-one heading. Also the main title of the page -->
+    <div id="gameboard" ></div> <!-- empty container element used to manipulate the chess board -->
+    <div class="bars"> <!-- This container groups together several pieces of info -->
+
+        <p class="turnbar">It Is <span id="player"></span>'s Turn.</p> <!-- used to display whos turn it is -->
+        <p class="infobar" id="info-display"></p>
+        <p class="errbar" id="err"></p> <!-- used to display error messages -->
+
+    </div>
+
+    <script src="Chess_Pieces.js"></script> <!-- include the external file pieces.js in the doc -->
+    <script src="Chess.js"></script> <!-- include the external file Chess.js in the doc -->
+
+</body>
+
+</html>
